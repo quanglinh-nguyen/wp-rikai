@@ -167,6 +167,23 @@ wp_enqueue_style( 'promise-style', UNI_DIR .'/assets/css/promise.css' );
 				if( get_field('dp_ss6') == true ) { 
 					echo do_shortcode('[company_profile]');
 				}
+
+				if( get_field('dp_ss9') == true ) { 
+					$tt_ss9 = get_field('tt_ss9');
+					$description_ss9 = get_field('description_ss9');
+					echo '<div id="ss9" class="ses">';
+						echo '<div class="container">';
+							echo '<div class="wrap">';
+								if($tt_ss9) {
+									echo '<h2 class="heading"><span>'.$tt_ss9.'</span></h2>';
+								}
+								if($description_ss9) {
+									echo '<div class="description">'.$description_ss9.'</div>';
+								}
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				}
 			?>
 
 		</main><!-- #main -->

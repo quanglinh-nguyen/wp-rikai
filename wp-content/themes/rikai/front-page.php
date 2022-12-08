@@ -8,11 +8,223 @@
  * @package Uni_Theme
  */
 get_header(); 
+
 wp_enqueue_style( 'home-style', UNI_DIR .'/assets/css/home.css' );
 // wp_enqueue_style( 'aos-css');
 // wp_enqueue_script( 'aos-js');
 ?>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<style>
+	  /* ss9 */
+	#ss9 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #FFF; }
+ #ss9 .heading span {
+    line-height: 1.25em;
+    color: #141a30;
+  margin-bottom: 50px; }
 
+  #ss9 .heading span {
+    line-height: 1.25em;
+    color: #141a30;
+  margin-bottom: 50px; }
+
+  .main-ss9 .item-ss9{
+    box-sizing: border-box;
+    width: 100%;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .main-ss9 .item-ss9:hover .item-image{
+    filter: none;
+  }
+
+  .main-ss9 .item-ss9 .item-image{
+    filter: grayscale(100%);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+    border-radius: 5px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-ss9 .item-ss9 .item-image img{
+    max-width: 110px;
+    max-height: 64px;
+    object-fit: contain;
+  }
+
+	    /* ss10 */
+  #ss10 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+ }
+  #ss10 .testimonials{
+    text-align: center;
+    color: var(--textcolor);
+    font-size: 20px;
+    line-height: 1.08333333;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+ #ss10 .heading span {
+    line-height: 1.25em;
+    color: var(--primarycolor);
+  margin-bottom: 50px; }
+  .main-ss10 .box-testimonials{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-ss10 .item-ss10{
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .main-ss10 .item-ss10 .item-image{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-ss10 .item-ss10 .item-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 134, 209, 0.2);
+    object-fit: contain;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  }
+
+  .main-ss10 .ss10-content {
+    max-width: 75%;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .main-ss10 .item-ss10 .numberofstars {
+    margin-top: 15px;
+    color: #ffd700;
+  }
+
+   .main-ss10 .item-ss10 .testimonial-name {
+    margin-top: 15px;
+    line-height: 1.08333333;
+    color: var(--textcolor);
+    font-weight: 600;
+  }
+
+  .main-ss10 .item-ss10 .testimonial-company-name {
+    line-height: 1.625;
+    color: var(--textcolor);
+  }
+
+  .box-testimonials .slick-arrow{
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }/* ss10 */
+  #ss10 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+ }
+  #ss10 .testimonials{
+    text-align: center;
+    color: var(--textcolor);
+    font-size: 20px;
+    line-height: 1.08333333;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+ #ss10 .heading span {
+    line-height: 1.25em;
+    color: var(--primarycolor);
+  margin-bottom: 50px; }
+  .main-ss10 .box-testimonials{
+    display: flex;
+    flex-direction: column;
+  }
+  .main-ss10 .item-ss10{
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .main-ss10 .item-ss10 .item-image{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-ss10 .item-ss10 .item-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 134, 209, 0.2);
+    object-fit: contain;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+  }
+
+  .main-ss10 .ss10-content {
+    max-width: 75%;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .main-ss10 .item-ss10 .numberofstars {
+    margin-top: 15px;
+    color: #ffd700;
+  }
+
+   .main-ss10 .item-ss10 .testimonial-name {
+    margin-top: 15px;
+    line-height: 1.08333333;
+    color: var(--textcolor);
+    font-weight: 600;
+  }
+
+  .main-ss10 .item-ss10 .testimonial-company-name {
+    line-height: 1.625;
+    color: var(--textcolor);
+  }
+
+  .box-testimonials .slick-arrow{
+    box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+	</style>
 	<div id="primary" class="content-sidebar-wrap">
 
 		<?php do_action( 'before_main_content' ) ?>
@@ -398,6 +610,91 @@ wp_enqueue_style( 'home-style', UNI_DIR .'/assets/css/home.css' );
 						echo '</div>';
 					echo '</div>';
 				}
+				
+
+				if( get_field('dp_ss10_linh') == true ) { 
+					$tt_ss10_linh = get_field('tt_ss10_linh');
+					$list_ss10_linh = get_field('list_ss10_linh');
+					echo '<div id="ss10" class="homepage" >';
+						echo '<div class="container">';
+							echo '<div class="wrap">';
+								echo '<h4 class="testimonials">Testimonials</h4>';
+								if($tt_ss10_linh) {
+									echo '<h2 class="heading" data-aos="fade-up"
+									data-aos-anchor-placement="top-bottom" data-aos-duration="1000"><span>'.$tt_ss10_linh.'</span></h2>';
+								}
+								echo '<div class="main-ss10 ">';
+									if($list_ss10_linh) {
+										echo '<div class="list-testimonials" data-aos="fade-up"
+										data-aos-anchor-placement="top-bottom" data-aos-duration="1000">';
+											echo '<div class="box-testimonials">';
+												foreach ($list_ss10_linh as $key => $value) {
+													echo '<div class="item-ss10">';
+														if($value['image']) {
+															echo '<div class="item-image">';
+																echo '<img src="'.$value['image'].'" />';
+															echo '</div>';
+														}
+														echo '<div class="ss10-content">';
+															if($value['decription']) {
+																echo '<div class="description">'.$value['decription'].'</div>';
+															}
+														echo '</div>';
+														echo '<div class="numberofstars">';
+														for ($i=0; $i < $value['numberofstars']; $i++) { 
+															echo '<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+															<polygon fill="#ffd700" stroke="#ffd700" stroke-width="1.01" points="10 2 12.63 7.27 18.5 8.12 14.25 12.22 15.25 18 10 15.27 4.75 18 5.75 12.22 1.5 8.12 7.37 7.27">
+															</polygon></svg>';
+														}
+														echo '</div>';
+														echo '<h4 class="testimonial-name">'.$value['fullname'].'</h4>';
+														echo '<p class="testimonial-company-name">'.$value['companyname'].'</p>';
+													echo '</div>';
+												}
+											echo '</div>';
+										echo '</div>';
+									}
+								echo '</div>';
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				}
+
+				if( get_field('dp_ss9_linh') == true ) { 
+					$tt_ss9_linh = get_field('tt_ss9_linh');
+					$bg_ss9_linh = get_field('bg_ss9_linh');
+					$list_ss9_linh = get_field('list_ss9_linh');
+					echo '<div id="ss9" class="homepage" style="background-image:url('.$bg_ss9_linh.')">';
+						echo '<div class="container">';
+							echo '<div class="wrap">';
+								if($tt_ss9_linh) {
+									echo '<h2 class="heading" data-aos="fade-up"
+									data-aos-anchor-placement="top-bottom" data-aos-duration="1000"><span>'.$tt_ss9_linh.'</span></h2>';
+								}
+								echo '<div class="main-ss9 ">';
+									if($list_ss9_linh) {
+										echo '<div class="list-image" data-aos="fade-up"
+										data-aos-anchor-placement="top-bottom" data-aos-duration="1000">';
+											echo '<div class="row list-row justify-content-center">';
+												foreach ($list_ss9_linh as $key => $value) {
+													echo '<div class="col-md-2 col-6 mb-5">';
+														echo '<div class="item-ss9">';
+															if($value['image']) {
+																echo '<div class="item-image">';
+																	echo '<img src="'.$value['image'].'" />';
+																echo '</div>';
+															}
+														echo '</div>';
+													echo '</div>';
+												}
+											echo '</div>';
+										echo '</div>';
+									}
+								echo '</div>';
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				}
 			?>
 
 		</main><!-- #main -->
@@ -405,6 +702,10 @@ wp_enqueue_style( 'home-style', UNI_DIR .'/assets/css/home.css' );
 		<?php do_action( 'after_main_content' );?>
 
 	</div><!-- #primary -->
-        
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script type="text/javascript">
+		$('.box-testimonials').slick();
+	</script>
 <?php
 get_footer();

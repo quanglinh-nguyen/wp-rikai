@@ -30,10 +30,10 @@ define( 'DISALLOW_FILE_EDIT', true ); // Disable File Editor - Security > Settin
 define('DB_NAME', 'rikaimind_home');
 
 /** MySQL database username */
-define('DB_USER', 'rikaimind_home');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'RXTqr59P');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -85,7 +85,6 @@ $table_prefix  = 'uni_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define( 'WP_DEBUG', false );
-define( 'DISALLOW_FILE_EDIT', true );
 define('AUTOSAVE_INTERVAL', 300 ); // seconds
 define('WP_POST_REVISIONS', false );
 define('FS_METHOD','direct');
@@ -95,5 +94,7 @@ define('FS_METHOD','direct');
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
+// update_option('siteurl','https://localhost/Rikai');
+// update_option('home','https://localhost/Rikai');
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
