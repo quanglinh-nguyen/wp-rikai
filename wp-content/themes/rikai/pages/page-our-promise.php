@@ -37,15 +37,15 @@ wp_enqueue_style( 'promise-style', UNI_DIR .'/assets/css/promise.css' );
 								}
 							echo '</div>';
 						echo '</div>';
+						if($description) {
 						echo '<div class="intro-foot">';
 							echo '<div class="container">';
 								echo '<div class="intro-content">';
-									if($description) {
-										echo $description;
-									}
+									echo $description;
 								echo '</div>';
 							echo '</div>';
 						echo '</div>';
+						}
 					echo '</div>';
 				}
 				if( get_field('dp_ss2') == true ) { 
